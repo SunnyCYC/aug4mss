@@ -21,7 +21,7 @@ The contents are oganized as follows:
     * Random_N2000
     * Wet_N2000
 * Demo_mp3_15sec:
-    * [demo page](https://sunnycyc.github.io/aug4mss/index.html)
+    * [demo page](https://sunnycyc.github.io/aug4mss_demo/)
     * 15-sec version of the 16 test songs
 * MedleyDB_Tsongs:
     * MedleyDB_16tsong_path.pickle
