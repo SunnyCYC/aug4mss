@@ -50,7 +50,7 @@ for extracting the 16 MedleyDB[2, 3] songs.
 ## Reference
 [1] *F.-R. St ̈oter, S. Uhlich, A. Liutkus, and Y. Mitsufuji, “Open-Unmix - Areference implementation for music source separation,”Journal of OpenSource Software, vol. 4, no. 41, p. 1667, 2019.*
 
-*[2] MedleyDB Original:
+[2] *MedleyDB Original:
 R. Bittner, J. Salamon, M. Tierney, M. Mauch, C. Cannam and J. P. Bello, "MedleyDB: A Multitrack Dataset for Annotation-Intensive MIR Research", in 15th International Society for Music Information Retrieval Conference, Taipei, Taiwan, Oct. 2014.*
 
 [3] *MedleyDB 2.0
