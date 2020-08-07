@@ -2,7 +2,8 @@
 
 
 This repo contains the scripts and demo songs for paper titled 
-"*Mixing-Specific Data Augmentation Techniques for Improved Blind Violin/Piano Source Separation*".
+"*Mixing-Specific Data Augmentation Techniques for Improved Blind Violin/Piano Source Separation*". |[**paper**](https://arxiv.org/abs/2008.02480)|[**demo page**](https://sunnycyc.github.io/aug4mss_demo/)|[**pretrained models (GoogleDrive)**](https://drive.google.com/drive/folders/1YyLww3G7-Amu_bs8s9Wl3NceUcQuq3Or)|
+
 
 The main purpose of this work is to allow users to apply mixing-specific data augmentation techniques to facilitate the training of a neural network model for source separation, in particular with the Open-Unmix model architecture [1]. The training scripts required for training your own models can be found from [the official repository of Open-Unmix](https://github.com/sigsep/open-unmix-pytorch).
 
