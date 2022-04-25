@@ -14,6 +14,7 @@ import soundfile as sf
 from pathlib import Path
 import torch
 import time
+import librosa
 
 source_dir = './Demo_mp3_15sec'
 tsong_list = glob.glob(os.path.join(source_dir, "*.mp3"))
@@ -24,7 +25,7 @@ device = torch.device(cuda_str if torch.cuda.is_available() else "cpu")
 samplerate = 44100
 
 model_dir = './Pretrained_Models' # directory of model folders
-model_list = ['random_N2000', 'wet_N2000'] # folder name of models for inferencing
+model_list = ['Random_N2000', 'Wet_N2000'] # folder name of models for inferencing
 
 
 def getEstimates_fromMpth(models_path, testsonglist):
@@ -32,16 +33,16 @@ def getEstimates_fromMpth(models_path, testsonglist):
         output_dir = Path(os.path.join(tsong.replace(".mp3", ""), "Estimates", os.path.basename(models_path)))
         if not os.path.exists(output_dir):
             output_dir.mkdir(exist_ok = True, parents = True)
-            tsong_audio, rate = sf.read(tsong, always_2d = True)
+            tsong_audio, rate = librosa.load(tsong, sr = samplerate)
             start_t = time.time()
-            estimates = separate(audio=tsong_audio, targets = ['violin', 'piano'], 
+            estimates = separate(audio=tsong_audio[:, np.newaxis], targets = ['violin', 'piano'], 
                          device = device, model_name = models_path)
             end_t = time.time()
             total_time=end_t-start_t
             print("Takes {} secs to separate song:{}".format(total_time, Path(tsong).stem))
             for target, estimate in estimates.items():
                 sf.write(
-                    str(output_dir / Path(target).with_suffix('.mp3')),
+                    str(output_dir / Path(target).with_suffix('.wav')),
                     estimate,
                     samplerate)
 if __name__=='__main__':
