@@ -18,7 +18,7 @@ Note that for our experiment scenario, we modified the model as follows:
 ## Contents
 The contents are oganized as follows:
 * Pretraind_Models: 
-    [ (Uploaded to GoogleDrive)](https://drive.google.com/drive/folders/1YyLww3G7-Amu_bs8s9Wl3NceUcQuq3Or?usp=sharing)
+    [ (Uploaded to GoogleDrive)](https://drive.google.com/drive/folders/1IgwOs1T1uc_AIgC761PmApn_MtuIjBXt?usp=sharing)
     * Random_N2000
     * Wet_N2000
 * Demo_mp3_15sec:
