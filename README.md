@@ -48,7 +48,7 @@ for extracting the 16 MedleyDB[2, 3] songs.
 
 ## License
 
-This project is licensed under the **MIT License** - see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](./LICENSE.txt) file for details.
 
 ## Reference
 [1] *F.-R. St ̈oter, S. Uhlich, A. Liutkus, and Y. Mitsufuji, “Open-Unmix - Areference implementation for music source separation,”Journal of OpenSource Software, vol. 4, no. 41, p. 1667, 2019.*
